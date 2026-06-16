@@ -1,0 +1,53 @@
+-- Day 4 Activity 2: SQL First Queries — employees table
+-- Author: Nerissa A. Sonajo
+-- Database: Day04_practice.db
+-- Date: JUNE 16, 2026
+
+
+-- 23. Show all the columns for all products
+SELECT *
+FROM products;
+
+-- 24. Show only the product_name and price of all products
+SELECT product_name, price 
+FROM products;
+
+-- 25. Show all products in the Electronics category
+SELECT *
+FROM products
+WHERE category = 'Electronics';
+
+-- 26. Show all products with a price greater than ₱5,000
+SELECT *
+FROM products
+WHERE price > 5000;
+
+-- 27. Show all products supplied by DataBlitz
+SELECT *
+FROM products
+WHERE supplier = 'DataBlitz';
+
+-- 28. Show the product_name, category, and stock_qty of products with stock less than 10
+SELECT product_name, category, stock_qty
+FROM products
+WHERE stock_qty < 10;
+
+-- 29. Show all products in the Accessories category with price less than ₱1,500
+SELECT *
+FROM products
+WHERE category = 'Accessories' AND price < 1500;
+
+-- 30. Show the product_name and price of the product with product_id = 8
+SELECT product_name, price
+FROM products
+WHERE product_id = 8;
+
+-- 31. Show all products with stock_qty greater than or equal to 30
+SELECT *
+FROM products
+WHERE stock_qty >= 30;
+
+-- 32. Show all products that are NOT in the Accessories category
+SELECT *
+FROM products
+WHERE category != 'Accessories';
